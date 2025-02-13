@@ -1,0 +1,65 @@
+/* 🌈 Style général */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 📌 Conteneur principal */
+.todo-container {
+    width: 400px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* 📢 Titre */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 📝 Barre d'entrée */
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #667eea;
+    outline: none;
+    font-size: 16px;
+}
+
+.todo-input button {
+    padding: 12px;
+    border: none;
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.todo-input button:hover {
+    background: #764ba2;
+}
+
+/* ✅ Effet lorsqu'une tâche est complétée */
+.completed span {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
